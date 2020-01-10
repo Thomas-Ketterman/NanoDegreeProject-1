@@ -42,6 +42,13 @@ a {
   /* border: 1px solid black; */
 }
 
+.btn {
+  color: #fff;
+  padding: 1em 2em;
+  margin: 1em;
+  background: var(--violet);
+}
+
 /* 
 HEADER 
 */

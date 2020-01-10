@@ -15,10 +15,11 @@ My name is Thomas. I happen to be a first time parent, which presents it own set
 
 ## TODO for 01/10
 
-1. Locate social icon SVGs.
+<!-- 1. Locate social icon SVGs. (Completed)
 2. complete structure of aside.
-3. begin CSS grid structure.
+3. begin CSS grid structure. -->
 
 ## TODO for 01/11
 
 1. Find and link linkedIn account to Social Icon.
+2. Create button hover effect
