@@ -7,6 +7,8 @@
   --purple: #603f8b;
 }
 
+/* MORE RESETS */
+
 * {
   box-sizing: border-box;
 }
@@ -14,4 +16,111 @@
 body {
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card-title {
+  font-size: 2em;
+  margin: 1em 0;
+}
+
+.card-text {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 2em 0;
+  margin: 1em 0;
+  /* border: 1px solid black; */
+}
+
+/* 
+HEADER 
+*/
+
+.main-header {
+  text-align: center;
+  padding: 2em 0;
+}
+
+.logo {
+  font-size: 2em;
+}
+
+.main-nav ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-nav li {
+  margin: 0.2em 0;
+}
+
+.main-nav li a {
+  display: inline-block;
+  /* background-color: lightblue; */
+  padding: 1em 0;
+  width: 100%;
+  color: #000;
+}
+
+.main-nav li a:hover {
+  background: var(--purple);
+  color: #fff;
+}
+
+/* 
+CTA SECTION
+*/
+
+.cta-card {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red; */
+  align-items: center;
+}
+
+/* 
+Posts section of homepage
+*/
+
+/* 
+Author aside stylings.
+ */
+
+#author-card {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#author-card-text {
+  margin-top: 1em;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  /* background: skyblue; */
+}
+
+.social-icons a {
+  margin: 0 0.2em;
+  padding: 1em;
+  /* background: red; */
+}
+
+.social-icon {
+  /* margin: 1em; */
+  /* background: red; */
+  width: 2em;
 }
