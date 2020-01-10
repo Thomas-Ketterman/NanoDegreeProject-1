@@ -1,0 +1,17 @@
+@import "reset.css";
+
+:root {
+  --fuchsia: #fd49a0;
+  --violet: #a16ae8;
+  --aqua: #b4fee7;
+  --purple: #603f8b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}

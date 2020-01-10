@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
     <title>Dad Gab | Home</title>
   </head>
   <body>
     <header class="main-header">
-      <h3 class="logo">LOGO</h3>
+      <h3 class="logo"><a href="">LOGO</a></h3>
       <nav class="main-nav">
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -18,134 +19,92 @@
         </ul>
       </nav>
     </header>
+    <!-- Call to Action is outside of main for ease of styling. -->
+    <section id="cta">
+      <!-- Call to action Image goes below -->
+      <img src="" alt="" />
+      <article class="card cta-card">
+        <h2 class="card-title">CTA Title</h2>
+        <p class="card-text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere,
+          quos!
+        </p>
+        <a href="" class="btn">Read more</a>
+      </article>
+      <aside class="card" id="newsletter-card">
+        <h2 class="card-title">Newsletter Title</h2>
+        <p class="card-text">
+          Want my latest blunders and embarrassing debacle delivered to YOU?
+        </p>
+        <input type="email" placeholder="Enter Your Email" />
+        <a href="" class="btn newsletter-btn">Signup Now</a>
+      </aside>
+    </section>
+    <!-- Main Section begins here. Add Grid to main tag to create the desired layout -->
     <main id="main">
-      <!-- Beginning Call To Action -->
-      <section class="section-a">
-        <img src="" alt="" class="section-a-img" />
-        <article class="post-container">
-          <h2 class="title">CTA Post</h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt
-            unde eligendi culpa nemo maxime. Neque.
+      <!-- Section will enclose all articles, which will be 2 per column.  -->
+      <section class="main-article-wrapper">
+        <article class="card article-card">
+          <h2 class="card-title">Article 1</h2>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
+            hic veniam quisquam consequuntur illo fugit.
           </p>
-          <a href="">read more</a>
+          <a href="" class="btn">Read More</a>
+        </article>
+        <article class="card article-card">
+          <h2 class="card-title">Article 2</h2>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
+            hic veniam quisquam consequuntur illo fugit.
+          </p>
+          <a href="" class="btn">Read More</a>
+        </article>
+        <article class="card article-card">
+          <h2 class="card-title">Article 3</h2>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
+            hic veniam quisquam consequuntur illo fugit.
+          </p>
+          <a href="" class="btn">Read More</a>
+        </article>
+        <article class="card article-card">
+          <h2 class="card-title">Article 4</h2>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
+            hic veniam quisquam consequuntur illo fugit.
+          </p>
+          <a href="" class="btn">Read More</a>
         </article>
       </section>
-      <!-- End Of Call To Action -->
-      <div class="section-wrapper">
-        <!-- Beginning Section A -->
-        <section class="post">
-          <img src="" alt="" class="section-a-img" />
-          <article class="post-container">
-            <h2 class="title">Article 1</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt
-              unde eligendi culpa nemo maxime. Neque.
-            </p>
-            <a href="">read more</a>
-          </article>
-        </section>
-        <!-- End Section A -->
-        <!-- Beginning Section B -->
-        <section class="post">
-          <img src="" alt="" class="section-a-img" />
-          <article class="post-container">
-            <h2 class="title">Article 2</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt
-              unde eligendi culpa nemo maxime. Neque.
-            </p>
-            <a href="">read more</a>
-          </article>
-        </section>
-        <!-- End Section B -->
-        <!-- Beginning Section C -->
-        <section class="post">
-          <img src="" alt="" class="section-a-img" />
-          <article class="post-container">
-            <h2 class="title">Article 3</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt
-              unde eligendi culpa nemo maxime. Neque.
-            </p>
-            <a href="">read more</a>
-          </article>
-        </section>
-        <!-- End Section A -->
-        <!-- Beginning Section B -->
-        <section class="post">
-          <img src="" alt="" class="section-a-img" />
-          <article class="post-container">
-            <h2 class="title">Article 4</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt
-              unde eligendi culpa nemo maxime. Neque.
-            </p>
-            <a href="">read more</a>
-          </article>
-        </section>
-        <!-- End Section B -->
-      </div>
-      <!-- End Section Wrapper-->
-      <aside id="aside">
-        <article class="signup-form">
-          <h2 class="title signup-title">Dad Gab</h2>
-          <p id="signup-text">
-            Want your dose of Dad Gab delivered to YOU? Enter your email below.
-          </p>
-
-          <input
-            type="email"
-            placeholder="Enter Your Email Here"
-            id="signup-input"
-          />
-          <a href="" class="btn signup-btn">Sign up now</a>
-        </article>
-        <!-- End Signup Form -->
-        <article class="aside-article">
+      <!-- Aside will enclose all recommended posts will will display 1 at a time on the side of the screen. -->
+      <aside class="main-aside-wrapper">
+        <article class="card aside-card">
+          <h2 class="card-title">I'm Thomas</h2>
+          <!-- Personal Image -->
           <img src="" alt="" />
-          <p>
-            <a href="" class="aside-article-text"
-              >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Incidunt, iusto?</a
-            >
+          <p class="card-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae,
+            quibusdam incidunt est quo consectetur illum.
           </p>
-        </article>
-        <article class="aside-article">
-          <img src="" alt="" />
-          <p>
-            <a href="" class="aside-article-text"
-              >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Incidunt, iusto?</a
-            >
-          </p>
-        </article>
-        <article class="aside-article">
-          <img src="" alt="" />
-          <p>
-            <a href="" class="aside-article-text"
-              >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Incidunt, iusto?</a
-            >
-          </p>
-        </article>
-        <article class="aside-article">
-          <img src="" alt="" />
-          <p>
-            <a href="" class="aside-article-text"
-              >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Incidunt, iusto?</a
-            >
-          </p>
-        </article>
-        <article class="aside-article">
-          <img src="" alt="" />
-          <p>
-            <a href="" class="aside-article-text"
-              >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Incidunt, iusto?</a
-            >
-          </p>
+          <a href="" class="btn">Read More</a>
+          <!-- 
+              Use fontawesome for social media links
+           -->
+          <div class="social-icons">
+            <a href="https://twitter.com/CodingLyf" target="_blank"
+              ><img src="image/twitter.svg" alt="" class="social-icon"
+            /></a>
+            <a href="https://www.instagram.com/CodingLyf/" target="_blank"
+              ><img src="image/instagram.svg" alt="" class="social-icon"
+            /></a>
+            <a href="https://www.facebook.com/thomas.ketterman"
+              ><img src="image/facebook.svg" alt="" class="social-icon"
+            /></a>
+            <a href="#" target="_blank"
+              ><img src="image/linkedin.svg" alt="" class="social-icon"
+            /></a>
+          </div>
         </article>
       </aside>
     </main>
