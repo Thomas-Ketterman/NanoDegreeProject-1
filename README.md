@@ -22,5 +22,3 @@ My name is Thomas. I happen to be a first time parent, which presents it own set
 ## TODO for 01/11
 
 1. Find and link linkedIn account to Social Icon.
-
-Hi, Kim
