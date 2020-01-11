@@ -1,0 +1,15 @@
+@media (min-width: 700px) {
+}
+
+@media (min-width: 1000px) {
+  .blog {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+      "header header"
+      "cta cta"
+      "content aside"
+      "footer footer";
+    grid-gap: 20px;
+  }
+}

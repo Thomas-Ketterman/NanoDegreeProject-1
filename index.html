@@ -4,38 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Dad Gab | Home</title>
   </head>
   <body>
-    <header class="main-header">
-      <h3 class="logo"><a href="">LOGO</a></h3>
-      <nav class="main-nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="articles.html">Articles</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <!-- Call to Action is outside of main for ease of styling. -->
-    <section id="cta">
-      <!-- Call to action Image goes below -->
-      <article class="card cta-card">
-        <img src="image/bubble.jpg" class="image" alt="" />
-        <h2 class="card-title">CTA Title</h2>
-        <p class="card-text">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere,
-          quos!
-        </p>
-        <a href="" class="btn">Read more</a>
-      </article>
-    </section>
-    <!-- Main Section begins here. Add Grid to main tag to create the desired layout -->
-    <main id="main">
-      <!-- Section will enclose all articles, which will be 2 per column.  -->
-      <section class="main-article-wrapper">
+    <!-- Blog is a container that display of grid is on to make initial website structure. -->
+    <div class="blog">
+      <header class="main-header">
+        <h3 class="logo"><a href="">LOGO</a></h3>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="articles.html">Articles</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- Call to Action is outside of main for ease of styling. -->
+      <section id="cta">
+        <!-- Call to action Image goes below -->
+        <article class="card cta-card">
+          <img src="image/hands.jpg" class="image" alt="" />
+          <h2 class="card-title">CTA Title</h2>
+          <p class="card-text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere,
+            quos!
+          </p>
+          <a href="" class="btn">Read more</a>
+        </article>
+      </section>
+      <!-- Main Section begins here. Add Grid to main tag to create the desired layout -->
+      <main id="main-content">
         <article class="card article-card">
           <img src="image/christmas.jpg" alt="" class="card-image" />
           <h2 class="card-title">Article 1</h2>
@@ -72,8 +72,8 @@
           </p>
           <a href="" class="btn">Read More</a>
         </article>
-      </section>
-      <!-- Aside will enclose all recommended posts will will display 1 at a time on the side of the screen. -->
+        <!-- Aside will enclose all recommended posts will will display 1 at a time on the side of the screen. -->
+      </main>
       <aside class="main-aside-wrapper">
         <!-- Author Card. This will be placed at the top on mobile versions, and the first aside card on desktop view -->
         <article class="card aside-card" id="author-card">
@@ -86,8 +86,8 @@
           </p>
           <a href="" class="btn">Read More</a>
           <!-- 
-              Use SVG imgs for social media links
-           -->
+            Use SVG imgs for social media links
+         -->
           <div class="social-icons">
             <a href="https://twitter.com/CodingLyf" target="_blank"
               ><img src="image/twitter.svg" alt="" class="social-icon"
@@ -115,10 +115,46 @@
           </label>
           <a href="" class="btn newsletter-btn">Signup Now</a>
         </article>
+        <article class="card">
+          <img src="image/christmas.jpg" alt="" class="card-image" />
+          <h2 class="card-title">Article 1</h2>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
+            hic veniam quisquam consequuntur illo fugit.
+          </p>
+          <a href="" class="btn">Read More</a>
+        </article>
+        <article class="card">
+          <img src="image/shoulder.jpg" alt="" class="card-image" />
+          <h2 class="card-title">Article 2</h2>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
+            hic veniam quisquam consequuntur illo fugit.
+          </p>
+          <a href="" class="btn">Read More</a>
+        </article>
+        <article class="card">
+          <img src="image/sunset-walk.jpg" alt="" class="card-image" />
+          <h2 class="card-title">Article 3</h2>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
+            hic veniam quisquam consequuntur illo fugit.
+          </p>
+          <a href="" class="btn">Read More</a>
+        </article>
+        <article class="card">
+          <img src="image/christmas.jpg" alt="" class="card-image" />
+          <h2 class="card-title">Article 4</h2>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
+            hic veniam quisquam consequuntur illo fugit.
+          </p>
+          <a href="" class="btn">Read More</a>
+        </article>
       </aside>
-    </main>
-    <footer id="main-footer">
-      <p>&copy; 2020 <a href="">www.dadgab.com</a></p>
-    </footer>
+      <footer id="main-footer">
+        <p>&copy; 2020 <a href="">www.dadgab.com</a></p>
+      </footer>
+    </div>
   </body>
 </html>

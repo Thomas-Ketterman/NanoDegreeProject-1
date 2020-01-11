@@ -1,45 +1,27 @@
 @import "reset.css";
-
-:root {
-  --fuchsia: #fd49a0;
-  --violet: #a16ae8;
-  --aqua: #b4fee7;
-  --purple: #603f8b;
-}
+@import "variables.css";
+@import "layout.css";
+@import "typography.css";
+@import "breakpoints.css";
 
 /* MORE RESETS */
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-a {
-  text-decoration: none;
-}
-
 .card-title {
-  font-size: 2em;
+  font-size: var(--fs-title);
   margin: 1em 0;
 }
 
 .card-text {
-  font-size: 1.2em;
+  font-size: var(--fs-p);
   margin-bottom: 1em;
+  padding: 0 1em;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   align-items: center;
   padding: 2em 0;
   margin: 1em 0;
-  /* border: 1px solid black; */
 }
 
 .btn {
@@ -77,11 +59,29 @@ HEADER
   padding: 1em 0;
   width: 100%;
   color: #000;
+  font-size: 1.2em;
 }
 
 .main-nav li a:hover {
   background: var(--purple);
   color: #fff;
+}
+
+@media (min-width: 700px) {
+  .main-nav {
+    margin-top: 1em;
+  }
+  .main-nav ul {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .main-nav li a {
+    display: inline-block;
+    /* background-color: lightblue; */
+    padding: 1em 3em;
+    width: 100%;
+    color: #000;
+  }
 }
 
 /* 
@@ -96,8 +96,50 @@ CTA SECTION
 }
 
 /* 
+Main Styling 
+*/
+
+#main {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas: "content aside";
+
+  width: 95%;
+  margin: 0 auto;
+}
+
+.main-article-wrapper {
+  grid-area: content;
+}
+
+.main-aside-wrapper {
+  grid-area: aside;
+}
+
+/* @media (min-width: 800px) {
+  #main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 30px;
+  }
+} */
+
+/* 
 Posts section of homepage
 */
+
+/* @media (min-width: 700px) {
+  .main-article-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid red;
+  }
+} */
+
+.main-article-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
 /* 
 Author aside stylings.
@@ -130,4 +172,16 @@ Author aside stylings.
   /* margin: 1em; */
   /* background: red; */
   width: 2em;
+}
+
+/* 
+Footer
+*/
+
+footer {
+  text-align: center;
+}
+
+footer a {
+  color: #000;
 }

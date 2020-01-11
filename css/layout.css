@@ -1,0 +1,39 @@
+/* .blog {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas:
+    "header header"
+    "cta cta"
+    "content aside"
+    "footer footer";
+  grid-gap: 20px;
+} */
+
+header {
+  grid-area: header;
+}
+
+#cta {
+  grid-area: cta;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: start;
+  grid-gap: 15px;
+  grid-area: content;
+}
+
+main article {
+  display: flex;
+  flex-direction: column;
+}
+
+aside {
+  grid-area: aside;
+}
+
+footer {
+  grid-area: footer;
+}
